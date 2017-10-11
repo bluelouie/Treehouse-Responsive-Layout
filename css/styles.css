@@ -1,0 +1,182 @@
+/*------------------------------------------Global Layout*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+p {
+  margin: 10px 5px 30px;
+  font-size: 1.1em
+}
+
+img{
+  width: 100%
+}
+
+/* ------------------------------------------Base styles*/
+
+.main-nav {
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+
+}
+
+.main-nav ul{
+  padding: 0px;
+  margin: auto;
+}
+
+.main-nav ul li {
+  list-style: none;
+  font-weight: bold;
+  padding: 10px;
+  margin: 3px 14px;
+  background-color: white;
+}
+
+
+.main-content {
+  background-color: white;
+  padding: 11px;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sect p{
+  font-size: 1em;
+}
+
+#contact {
+  margin: 50px 30px 0px;
+  width: 93%;
+  border-bottom: #d9d9d9 solid 1px;
+}
+
+.main-footer {
+  font-size: .5em;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/* ------------------------------------------Media Quieries*/
+
+
+@media (min-width: 768px) {
+
+
+  .main-nav ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-nav ul li {
+    background-color: inherit;
+  }
+
+  .sect {
+    width: 49%;
+  }
+
+  .sect p {
+    margin: 5px 5px 35px;
+  }
+
+  .intro {
+    margin: 25px auto 50px;
+    width: 95%;
+
+  }
+
+  .intro img {
+    width: 50%;
+    float: right;
+    margin-left: 20px;
+  }
+
+  .intro p {
+    text-align: left;
+  }
+
+  .contact {
+    padding-bottom: 50px;
+    margin: 50px 30px 0px;
+  }
+
+  .main-footer{
+    margin: 10px 10px 25px;
+  }
+
+
+
+}
+
+@media (min-width: 1024px) {
+
+  body {
+    width: 96%;
+    max-width: 1030px;
+  }
+
+  .main-header {
+    max-width: 95%;
+
+    margin: 30px auto;
+  }
+
+  .main-header h1 {
+    float: left;
+    margin: 0px;
+  }
+
+  .main-nav ul {
+    justify-content: flex-end;
+  }
+
+  .intro img {
+    max-width: 460px;
+  }
+
+  .sect {
+    max-width: 31%;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------Clearfix*/
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
